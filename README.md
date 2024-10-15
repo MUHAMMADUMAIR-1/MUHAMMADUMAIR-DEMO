@@ -1,3 +1,4 @@
+![Screenshot 2024-10-15 233542](https://github.com/user-attachments/assets/73fc982f-0931-478d-8207-ef5474afaea3)
 <h2>User Interface</h2>
 <p>
 The user interface of the application is designed to be user-friendly and intuitive.
