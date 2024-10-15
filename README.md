@@ -4,7 +4,7 @@ The user interface of the application is designed to be user-friendly and intuit
 
 1: Homepage: Features a grid of images, a search bar, and easy navigation.
 
-2: earch Results: Allows filtering by orientation, color, and supports infinite scrolling.
+2: Search Results: Allows filtering by orientation, color, and supports infinite scrolling.
 
 3: Image Details: Displays larger previews, download options, photographer info, and related images.
 
