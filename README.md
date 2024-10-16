@@ -33,3 +33,44 @@ The user interface of the application is designed to be user-friendly and intuit
 
 7: Speeding Up the Site: The backend uses special techniques to make the website load faster and handle many users at once.
 </p>
+
+
+<h2>Recurring</h2>
+
+<p> 
+function dispenser(a){
+
+    //This function takes an argument a and returns another function that takes a second argument b.
+
+  return function(b){
+
+    //he second function returns yet another function, glass, which takes a third argument g.
+
+    return function glass (g){
+
+      return "You can drink Water"
+
+      //The glass function always returns the string "You can drink Water," regardless of the arguments passed.
+    }
+  }
+};
+let dis= dispenser("yes")
+
+//Calling dispenser("yes") returns a new function that expects the next argument, b.
+dis now holds a function waiting for b.
+
+let water=dis("cold water")
+
+//Calling dis("cold water") returns another function waiting for the third argument, g.
+water now holds a function that expects g
+
+let cup=water("present")
+
+//Calling water("present") returns the string "You can drink Water".
+
+console.log(cup)
+
+So, cup is set to "You can drink Water."
+
+
+</p>
