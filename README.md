@@ -72,3 +72,22 @@ Searching for a Product: When you search for "bikes," OLX's server processes thi
 Viewing an Item: When you click on a product, OLX shows the item details without knowing what you viewed before. Your browsing history is managed by your own browser, not the server.
 So, statelessness helps OLX keep things fast and scalable, while still using tokens or cookies to keep you logged in or track simple preferences.
 </p>
+<h2>I will this discuss about API request method</h2>
+
+<p>
+<h4>GET REQUEST</h4>
+It is used for search data,view category.
+
+<h4>POST REQUEST</h4>
+It is used for post ads,login or sign up request.
+
+<h4>PUT REQUEST</h4>
+Such as editing an ad or updating your profile information.
+
+<h4>DELETE REQUEST</h4>
+When i need to delete my ad/post or account.
+
+<h4>PATCH REQUEST</h4>
+When i need to update my ad picture i this case i will  use patch request.
+</p>
+
