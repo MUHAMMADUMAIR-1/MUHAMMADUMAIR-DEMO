@@ -31,14 +31,44 @@ function dispenser(a){
     }
   }
 };
+
 let dis= dispenser("yes")
-//Calling dispenser("yes") returns a new function that expects the next argument, b.
+
+  //Calling dispenser("yes") returns a new function that expects the next argument, b.
 dis now holds a function waiting for b.
-let water=dis("cold water")
+
+ let water=dis("cold water")
+
 //Calling dis("cold water") returns another function waiting for the third argument, g.
 water now holds a function that expects g
-let cup=water("present")
+
+ let cup=water("present")
 //Calling water("present") returns the string "You can drink Water".
 console.log(cup)
 So, cup is set to "You can drink Water."
+</p>
+
+<h2>Stateless</h2>
+<p>
+1. Each Request is Independent
+
+When you use OLX, every action you perform (like searching for items, viewing a product, or contacting a seller) is treated as a separate request. The server processes each request as if it’s happening for the first time, without remembering what you did before.
+
+2. No Memory of Previous Actions
+
+Stateless systems don’t remember your previous steps. For example, if you searched for a car and then looked at a laptop, OLX doesn't remember your search history unless it's stored in cookies or the browser. Each search or action you perform starts fresh.
+
+3. User Session Management
+
+To maintain user experience (like staying logged in or viewing saved items), OLX uses things like cookies, tokens, or local storage on your browser. These methods help identify your session without the server having to remember the state. This makes it easier to log in from different devices without any server-side memory.
+
+4. Scalability and Performance
+
+Since the server doesn’t store session data, OLX can handle a large number of users at the same time more easily. Each server can process requests independently, which helps the site perform faster and handle more traffic.
+
+Example in OLX:
+
+Searching for a Product: When you search for "bikes," OLX's server processes this request independently. If you search again for "cars," it doesn’t connect your previous search.
+Viewing an Item: When you click on a product, OLX shows the item details without knowing what you viewed before. Your browsing history is managed by your own browser, not the server.
+So, statelessness helps OLX keep things fast and scalable, while still using tokens or cookies to keep you logged in or track simple preferences.
 </p>
